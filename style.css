@@ -1,0 +1,165 @@
+
+.clock{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-color: lightslategray;
+    border: solid;
+    border-color: rgb(1, 14, 25);
+    position: relative;
+    box-shadow: 5px;
+    -webkit-box-shadow: 6px 10px 9px 0px rgb(16, 2, 16);
+    -moz-box-shadow: 6px 10px 9px 0px rgb(16, 2, 16);
+    box-shadow: 6px 10px 9px 0px rgb(16, 2, 16);
+}
+
+p{
+    position: absolute;
+    font-size: 14px;
+}
+
+.first {
+    top: 10%;
+    left: 70%;
+}
+
+.second {
+    top: 26%;
+    left: 83%;
+}
+
+.third {
+    top: 44%;
+    left: 90%;
+}
+
+.fouth {
+    top: 62%;
+    left: 83%;
+}
+
+.fifth  {
+    top: 76%;
+    left: 70%;
+}
+.six {
+    left: 48%;
+    top: 85%;
+}
+
+.seventh {
+    top: 76%;
+    left: 27%;
+}
+
+.eight {
+    top: 62%;
+    left: 13%;
+}
+
+.nineth {
+    top: 44%;
+    left: 7%;
+}
+
+.ten {
+    top: 26%;
+    left: 13%;
+}
+
+.eleven {
+    top: 10%;
+    left: 25%;
+}
+
+.twelve {
+    left: 48%;
+    top: 3%;
+}
+
+.hour{
+    height: 90px;
+    width: 10px;
+    background: url(hour.jpg);
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 5px);
+    bottom: calc(50% - 5px);
+    z-index: 6;
+    animation-name: hour;
+    animation-duration: 86400s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    animation-direction: normal;
+    transform-origin: 100% 100%;
+    z-index: 2;
+}
+
+.min{
+    height: 110px;
+    width: 8px;
+    background: url(min.jpg);
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 4px);
+    bottom: calc(50% - 5px);
+    z-index: 4;
+    animation-name: min;
+    animation-duration: 3600s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    animation-direction: normal;
+    transform-origin: 100% 100%;
+    z-index: 4;
+}
+
+.sec{
+    height: 130px;
+    width: 2px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 1px);
+    bottom: calc(50% - 5px);
+    z-index: 6;
+    animation-name: sec;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    animation-direction: normal;
+    transform-origin: 100% 100%;
+    z-index: 6;
+}
+
+.center{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 100%;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    z-index: 8;
+}
+
+
+
+
+@keyframes sec {
+    from{transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}
+
+@keyframes min {
+    from{transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}
+
+@keyframes hour {
+    from{transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}
+
+
+
+
